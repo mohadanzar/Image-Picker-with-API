@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Picker with API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Image Picker with API</h1>
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="Search for images">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <div class="container-flute">
+        <div class="left-nav">
+            <div class="aside left" id="sidebar">
+                <!-- API images will load here -->
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div class="main">
+                <!-- Default image on load -->
+                <img src="/3d-abstract-polygon.jpg" alt="Main Image" class="main-image">
+                <div class="color-container">
+                    <h3>BORDER COLOR</h3>
+                    <button class="color-btn" data-color="red"></button>
+                    <button class="color-btn" data-color="blue"></button>
+                    <button class="color-btn" data-color="green"></button>
+                    <button class="color-btn" data-color="orange"></button>
+                    <button class="color-btn" data-color="Navy"></button>
+                    <button class="color-btn" data-color="Teal"></button>
+                    <button class="color-btn" data-color="light grey"></button>
+                    <button class="color-btn" data-color="grey"></button>
+                </div>
+                <!-- Delete Button below colors --> 
+                <div class="delete-container">
+                    <button id="delete-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
